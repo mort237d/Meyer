@@ -10,8 +10,7 @@ namespace Meyer
     {
         static void Main(string[] args)
         {
-            Dice dice = new Dice();
-            Rules rules = new Rules();
+            Game game = new Game();
         }
     }
 }

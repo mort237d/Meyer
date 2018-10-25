@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Meyer
 {
     class Dice
     {
+        private int timer = 250;
         private string spacer = "   ";
         string[,] diceArrayStrings = new string[6,5];
         private string[] diceArray1 = new[] { "+-------+",
@@ -80,65 +82,6 @@ namespace Meyer
             else Console.WriteLine("+-------(" + firstNumber + " " + secondNumber + ")-------+");
 
         }
-        public void PrintDice(int eye)
-        {
-            if (eye == 1)
-            {
-                Console.WriteLine("+-------+" +
-                                  "\n|       |" +
-                                  "\n|   0   |" +
-                                  "\n|       |" +
-                                  "\n+-------+");
-            }
-            else if (eye == 2)
-            {
-                Console.WriteLine("+-------+" +
-                                  "\n|     0 |" +
-                                  "\n|       |" +
-                                  "\n| 0     |" +
-                                  "\n+-------+");
-            }
-            else if (eye == 3)
-            {
-                Console.WriteLine("+-------+" +
-                                  "\n|     0 |" +
-                                  "\n|   0   |" +
-                                  "\n| 0     |" +
-                                  "\n+-------+");
-            }
-            else if (eye == 4)
-            {
-                Console.WriteLine("+-------+" +
-                                  "\n| 0   0 |" +
-                                  "\n|       |" +
-                                  "\n| 0   0 |" +
-                                  "\n+-------+");
-            }
-            else if (eye == 5)
-            {
-                Console.WriteLine("+-------+" +
-                                  "\n| 0   0 |" +
-                                  "\n|   0   |" +
-                                  "\n| 0   0 |" +
-                                  "\n+-------+");
-            }
-            else if (eye == 6)
-            {
-                Console.WriteLine("+-------+" +
-                                  "\n| 0   0 |" +
-                                  "\n| 0   0 |" +
-                                  "\n| 0   0 |" +
-                                  "\n+-------+");
-            }
-            else
-            {
-                Console.WriteLine("         " +
-                                  "\n         " +
-                                  "\n         " +
-                                  "\n         " +
-                                  "\n         ");
-            }
-        }
 
         public void Animation()
         {
@@ -149,6 +92,71 @@ namespace Meyer
                               "\n  /             \\" +
                               "\n /               \\" +
                               "\n/_________________\\");
+            Thread.Sleep(timer);
+            Console.Clear();
+            Console.WriteLine(  "      +-----+" +
+                              "\n     /       \\" +
+                              "\n    /         \\" +
+                              "\n   /           \\" +
+                              "\n  /   R         \\" +
+                              "\n /               \\" +
+                              "\n/_________________\\");
+            Thread.Sleep(timer);
+            Console.Clear();
+            Console.WriteLine(  "      +-----+" +
+                              "\n     /       \\" +
+                              "\n    /         \\" +
+                              "\n   /           \\" +
+                              "\n  /   RO        \\" +
+                              "\n /               \\" +
+                              "\n/_________________\\");
+            Thread.Sleep(timer);
+            Console.Clear();
+            Console.WriteLine(  "      +-----+" +
+                              "\n     /       \\" +
+                              "\n    /         \\" +
+                              "\n   /           \\" +
+                              "\n  /   ROL       \\" +
+                              "\n /               \\" +
+                              "\n/_________________\\");
+            Thread.Sleep(timer);
+            Console.Clear();
+            Console.WriteLine(  "      +-----+" +
+                              "\n     /       \\" +
+                              "\n    /         \\" +
+                              "\n   /           \\" +
+                              "\n  /   ROLL      \\" +
+                              "\n /               \\" +
+                              "\n/_________________\\");
+            Thread.Sleep(timer);
+            Console.Clear();
+            Console.WriteLine(  "      +-----+" +
+                              "\n     /       \\" +
+                              "\n    /         \\" +
+                              "\n   /           \\" +
+                              "\n  /   ROLLI     \\" +
+                              "\n /               \\" +
+                              "\n/_________________\\");
+            Thread.Sleep(timer);
+            Console.Clear();
+            Console.WriteLine(  "      +-----+" +
+                              "\n     /       \\" +
+                              "\n    /         \\" +
+                              "\n   /           \\" +
+                              "\n  /   ROLLIN    \\" +
+                              "\n /               \\" +
+                              "\n/_________________\\");
+            Thread.Sleep(timer);
+            Console.Clear();
+            Console.WriteLine(  "      +-----+" +
+                              "\n     /       \\" +
+                              "\n    /         \\" +
+                              "\n   /           \\" +
+                              "\n  /   ROLLING   \\" +
+                              "\n /               \\" +
+                              "\n/_________________\\");
+            Thread.Sleep(timer);
+            Console.Clear();
         }
     }
 }

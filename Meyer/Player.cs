@@ -10,7 +10,7 @@ namespace Meyer
     {
         private string name;
         private int life = 6;
-        public Player()
+        public Player(Game game)
         {
             
         }
