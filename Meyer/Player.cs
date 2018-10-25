@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace Meyer
 {
-    class Program
+    class Player
     {
-        static void Main(string[] args)
+        private string name;
+        private int life = 6;
+        public Player()
         {
-            Dice dice = new Dice();
-            Rules rules = new Rules();
+            
         }
     }
 }
